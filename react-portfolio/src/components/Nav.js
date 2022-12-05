@@ -1,33 +1,86 @@
 import React from "react";
+import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
+import Form from "react-bootstrap/Form";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import NavDropdown from "react-bootstrap/NavDropdown";
 
-export default function Nav() {
-  const linkStyle = { border: "1px black", padding: "5px" };
-
+function Navigation() {
   return (
-    <nav className="navbar">
-      <section
-        style={{
-          display: "flex",
-          fontFamily: "helvetica",
-          flexDirection: "row",
-          alignItems: "center",
-          justifyContent: "center",
-          padding: "15px",
-        }}
-      >
-        <div style={linkStyle}>
-          <a href="#">Home</a>
-        </div>
-        <div style={linkStyle}>
-          <a href="#">ABOUT</a>
-        </div>
-        <div style={linkStyle}>
-          <a href="#">GITHUB</a>
-        </div>
-        <div style={linkStyle}>
-          <a href="#">Contact</a>
-        </div>
-      </section>
-    </nav>
+    <Navbar bg="light" expand="lg">
+      <Container fluid>
+        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+        <Navbar.Toggle aria-controls="navbarScroll" />
+        <Navbar.Collapse id="navbarScroll">
+          <Nav
+            className="me-auto my-2 my-lg-0"
+            style={{ maxHeight: "100px" }}
+            navbarScroll
+          >
+            <Nav.Link href="#action1">Home</Nav.Link>
+            <Nav.Link href="#action2">Link</Nav.Link>
+            <NavDropdown title="Link" id="navbarScrollingDropdown">
+              <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action4">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action5">
+                Something else here
+              </NavDropdown.Item>
+            </NavDropdown>
+            <Nav.Link href="#" disabled>
+              Link
+            </Nav.Link>
+          </Nav>
+          <Form className="d-flex">
+            <Form.Control
+              type="search"
+              placeholder="Search"
+              className="me-2"
+              aria-label="Search"
+            />
+            <Button variant="outline-success">Search</Button>
+          </Form>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
+
+export default Navigation;
+
+// export default function NavMenu() {
+//   const linkStyle = {
+//     border: "1px black",
+//     padding: "20px",
+//   };
+
+//   return (
+//     <nav className="main-header-menu">
+//       <section
+//         style={{
+//           display: "flex",
+//           fontFamily: "helvetica",
+//           flexDirection: "row",
+//           alignItems: "center",
+//           justifyContent: "center",
+//         }}
+//       >
+//         <div style={linkStyle}>
+//           <a href="#about">ABOUT</a>
+//         </div>
+//         <div style={linkStyle}>
+//           <a href="#portfolio">PORTFOLIO</a>
+//         </div>
+//         <div style={linkStyle}>
+//           <a href="#">RESUME</a>
+//         </div>
+//         <div style={linkStyle}>
+//           <a href="#contact">CONTACT</a>
+//         </div>
+//       </section>
+//     </nav>
+//   );
+// }

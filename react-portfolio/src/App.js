@@ -1,11 +1,12 @@
 import React from "react";
-import Nav from "./components/Nav";
+import Navigation from "./components/Nav";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 // Pass users array to the List component as a prop
 export default function App() {
   return (
-    <div className="navbar">
-      <Nav />
+    <div>
+      <Navigation />
     </div>
   );
 }
