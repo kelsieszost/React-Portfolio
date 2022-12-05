@@ -1,28 +1,19 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import Row from "react-bootstrap/Row";
+import About from "./About";
+import Navigation from "./Navigation";
+import Projects from "./Projects";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-function Header() {
+const Header = () => {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Container className="navStyles">
-        <Row>
-          <Navbar.Brand href="#home">KELSIE SZOST</Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        </Row>
-        <Row>
-          <Nav>
-            <Nav.Link href="#deets">About</Nav.Link>
-            <Nav.Link href="#">Projects</Nav.Link>
-            <Nav.Link href="#">Resume</Nav.Link>
-            <Nav.Link href="#">Contact</Nav.Link>
-          </Nav>
-        </Row>
-      </Container>
-    </Navbar>
+    <Router>
+      <Navigation />
+      <Routes>
+        <Route path="/about" element={<About />} />
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default Header;

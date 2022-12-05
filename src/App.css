@@ -1,11 +1,32 @@
 .navStyles {
-  padding: 2rem;
-  color: white;
+  padding: 2rem; 
 }
 
+.nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
+  background-color: black;
+  color: bl;
+}
 
 .card {
-  margin-top: 8rem;
+  margin-top: 6rem;
+}
+
+.card-title.h5 {
+  margin-top: 1rem;
+}
+.card-text {
+  margin-top: 1.5rem;
+}
+
+.imageContainer {
+  margin-top: 3rem;
+}
+
+.imageButton.btn.btn-primary {
+  margin-top: 1.5rem;
+  background-color: black;
+  color: white;
+  margin-bottom: 1rem;
 }
 
 .App {
