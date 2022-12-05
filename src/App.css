@@ -13,9 +13,14 @@
 
 .card-title.h5 {
   margin-top: 1rem;
+  font-size: xx-large;
 }
 .card-text {
   margin-top: 1.5rem;
+}
+
+.gallery-title {
+  margin-top: 3rem;
 }
 
 .imageContainer {
