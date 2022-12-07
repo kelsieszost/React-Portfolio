@@ -5,12 +5,8 @@ import LevelUp from "../assets/LevelUp.png";
 function Gallery() {
   const data = [
     {
-      image: "https://ibb.co/hs07R5Q",
+      image: "../assets/LevelUp.png",
       caption: "Level Up Fitness",
-    },
-    {
-      image: { LevelUp },
-      caption: "Scotland",
     },
     {
       image:
@@ -61,10 +57,7 @@ function Gallery() {
     <div className="Gallery">
       <div style={{ textAlign: "center" }}>
         <h2 className="gallery-title">Projects</h2>
-        <p>
-          Easy to use, responsive and customizable carousel component for React
-          Projects.
-        </p>
+        <p></p>
         <div
           style={{
             padding: "0 20px",
@@ -84,7 +77,7 @@ function Gallery() {
             dots={true}
             pauseIconColor="white"
             pauseIconSize="40px"
-            slideBackgroundColor="darkgrey"
+            slideBackgroundColor="black"
             slideImageFit="cover"
             thumbnails={true}
             thumbnailWidth="100px"

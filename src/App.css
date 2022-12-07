@@ -2,9 +2,14 @@
   padding: 2rem; 
 }
 
-.nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
+span.navbar-brand {
+  font-size: xx-large;
+}
+
+
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
   background-color: black;
-  color: bl;
+  color: black;
 }
 
 .card {
@@ -32,6 +37,11 @@
   background-color: black;
   color: white;
   margin-bottom: 1rem;
+}
+
+.skillsCard {
+  max-width: 50%;
+  justify-content: center;
 }
 
 .App {
