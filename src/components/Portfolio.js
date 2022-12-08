@@ -1,18 +1,31 @@
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
 import Skills from "./Skills";
 
-function SkillCard() {
+function SkillCard(props) {
+  const cardStyle = {
+    width: "80rem",
+    border: "none",
+  };
   return (
-    <Card className="skillsCard">
-      <Card.Body>
-        <Card.Title>Skills</Card.Title>
-        <Card.Text>
+    <div className="container">
+      <div className="card" style={cardStyle}>
+        <div className="card-body">
           <Skills></Skills>
-        </Card.Text>
-      </Card.Body>
-    </Card>
+        </div>
+      </div>
+    </div>
   );
 }
+// function SkillCard() {
+//   return (
+//     <Card className="skillSection">
+//       <Card.Body>
+//         <Card.Title>Skills</Card.Title>
+//         <Card.Text>
+//           <Skills></Skills>
+//         </Card.Text>
+//       </Card.Body>
+//     </Card>
+//   );
+// }
 
 export default SkillCard;

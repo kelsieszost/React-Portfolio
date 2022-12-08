@@ -1,15 +1,32 @@
 .navStyles {
-  padding: 2rem; 
+  padding-top: 4rem;
+  margin: 0;
 }
 
 span.navbar-brand {
   font-size: xx-large;
 }
 
-
-nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
+button.btn.btn-primary {
   background-color: black;
-  color: black;
+}
+
+div.modal-footer {
+  align-items: center;
+  justify-content: center;
+}
+
+div.modal.show {
+  /* padding-top: 5%; */
+
+}
+.navbar {
+  max-width: 100%;
+}
+
+a.Nav-Link {
+  padding: 5rem;
+
 }
 
 .card {
@@ -33,15 +50,19 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark {
 }
 
 .imageButton.btn.btn-primary {
-  margin-top: 1.5rem;
+  margin-top: 4rem;
   background-color: black;
   color: white;
   margin-bottom: 1rem;
 }
 
 .skillsCard {
+  display: flex;
+}
+
+.skillsSection {
+  display: flex;
   max-width: 50%;
-  justify-content: center;
 }
 
 .App {

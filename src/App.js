@@ -3,7 +3,6 @@ import "./App.css";
 import Header from "./components/Header";
 import AboutMe from "./components/About";
 import Gallery from "./components/Projects";
-import Skills from "./components/Skills";
 import SkillsCard from "./components/Portfolio";
 
 function App() {
