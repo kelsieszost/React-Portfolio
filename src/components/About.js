@@ -7,7 +7,7 @@ import AboutModal from "./Modal";
 function AboutMe(props) {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
-  function MoreAboutMe() {
+  function MoreAboutMe(props) {
     setModalIsOpen(true);
   }
   function closeModalHandler() {

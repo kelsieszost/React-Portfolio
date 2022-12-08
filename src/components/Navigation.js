@@ -2,8 +2,13 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Row from "react-bootstrap/Row";
+import AboutMe from "./About";
+import "../App.css";
 
-function Navigation() {
+function Navigation(props) {
+  function displayModal() {
+    props.MoreAboutMe();
+  }
   return (
     <Navbar collapseOnSelect expand="lg">
       <Container className="navStyles">
@@ -13,7 +18,7 @@ function Navigation() {
         </Row>
         <Row>
           <Nav>
-            <Nav.Link className="px-4" href="#">
+            <Nav.Link className="px-4" onClick={displayModal} href="">
               About
             </Nav.Link>
             <Nav.Link className="px-4" href="#">

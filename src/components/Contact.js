@@ -1,7 +1,10 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { Card, Container } from "react-bootstrap";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
-export const ContactUs = () => {
+const ContactUs = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -9,10 +12,10 @@ export const ContactUs = () => {
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "contact_service",
+        "contact_form",
         form.current,
-        "YOUR_PUBLIC_KEY"
+        "zFlD2QMTXPcK2m3xX"
       )
       .then(
         (result) => {
@@ -25,14 +28,24 @@ export const ContactUs = () => {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail}>
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-    </form>
+    <Card className="contactCard" style={{ marginTop: "8rem", border: "none" }}>
+      <h2 style={{ marginTop: "5rem", textAlign: "center" }}>Contact Me</h2>
+      <form
+        className="contactForm"
+        style={{ display: "flex" }}
+        ref={form}
+        onSubmit={sendEmail}
+      >
+        <label className="nameLabel">Name:</label>
+        <input className="nameInput" type="text" name="user_name" />
+        <label className="emailLabel">Email:</label>
+        <input className="emailInput" type="email" name="user_email" />
+        <label>Message:</label>
+        <textarea name="message" />
+        <input className="sendBtn" type="submit" value="Send" />
+      </form>
+    </Card>
   );
 };
+
+export default ContactUs;

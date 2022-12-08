@@ -65,8 +65,19 @@ a.Nav-Link {
   max-width: 50%;
 }
 
-.App {
-  text-align: center;
+.contactCard {
+  justify-content: center;
+}
+.contactForm {
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 16px;
+}
+
+label {
+  padding: 2rem;
 }
 
 .App-logo {

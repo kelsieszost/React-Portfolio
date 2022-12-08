@@ -9,7 +9,7 @@ function SkillCard(props) {
     <div className="container">
       <div className="card" style={cardStyle}>
         <div className="card-body">
-          <Skills></Skills>
+          <Skills />
         </div>
       </div>
     </div>

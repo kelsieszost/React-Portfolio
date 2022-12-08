@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import AboutMe from "./components/About";
 import Gallery from "./components/Projects";
 import SkillsCard from "./components/Portfolio";
+import ContactUs from "./components/Contact";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <AboutMe />
       <SkillsCard />
       <Gallery />
+      <ContactUs />
     </div>
   );
 }
