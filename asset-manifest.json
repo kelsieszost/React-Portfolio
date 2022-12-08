@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.236527a0.css",
-    "main.js": "/static/js/main.ef643932.js",
+    "main.css": "/static/css/main.b94e7f23.css",
+    "main.js": "/static/js/main.f3136447.js",
     "static/media/kelsieszost.jpg": "/static/media/kelsieszost.26a245954a0ef5b42d2d.jpg",
+    "static/media/LevelUp.png": "/static/media/LevelUp.c08ecbe73cf4d356abd7.png",
     "index.html": "/index.html",
-    "main.236527a0.css.map": "/static/css/main.236527a0.css.map",
-    "main.ef643932.js.map": "/static/js/main.ef643932.js.map"
+    "main.b94e7f23.css.map": "/static/css/main.b94e7f23.css.map",
+    "main.f3136447.js.map": "/static/js/main.f3136447.js.map"
   },
   "entrypoints": [
-    "static/css/main.236527a0.css",
-    "static/js/main.ef643932.js"
+    "static/css/main.b94e7f23.css",
+    "static/js/main.f3136447.js"
   ]
 }
