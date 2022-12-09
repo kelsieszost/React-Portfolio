@@ -2,10 +2,10 @@ import React from "react";
 import { Carousel } from "react-carousel-minimal";
 import LevelUp from "../assets/LevelUp.png";
 
-function Gallery() {
+function Gallery(props) {
   const data = [
     {
-      image: "../assets/LevelUp.png",
+      image: LevelUp,
       caption: "Level Up Fitness",
     },
     {
@@ -54,7 +54,7 @@ function Gallery() {
     fontWeight: "bold",
   };
   return (
-    <div className="Gallery">
+    <div className="Gallery" ref={(el) => (props.myRef.current.projects = el)}>
       <div style={{ textAlign: "center" }}>
         <h2 className="gallery-title">Projects</h2>
         <p></p>
@@ -78,7 +78,7 @@ function Gallery() {
             pauseIconColor="white"
             pauseIconSize="40px"
             slideBackgroundColor="black"
-            slideImageFit="cover"
+            slideImageFit="contain"
             thumbnails={true}
             thumbnailWidth="100px"
             style={{

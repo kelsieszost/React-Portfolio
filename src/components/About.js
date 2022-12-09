@@ -5,19 +5,11 @@ import kelsieszost from "../assets/kelsieszost.jpg";
 import AboutModal from "./Modal";
 
 function AboutMe(props) {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-
-  function MoreAboutMe(props) {
-    setModalIsOpen(true);
-  }
-  function closeModalHandler() {
-    setModalIsOpen(false);
-  }
   const cardStyle = {
     border: "none",
   };
   return (
-    <Card className="text-center" style={cardStyle}>
+    <Card id="about-me" className="text-center" style={cardStyle}>
       <Card.Body>
         <Card.Title>It's nice to meet you.</Card.Title>
         <Card.Text>
@@ -27,11 +19,12 @@ function AboutMe(props) {
         <div className="imageContainer">
           <img src={kelsieszost} width="450px" alt="portfolio" />
         </div>
-        <Button className="imageButton" onClick={MoreAboutMe}>
+        <Button className="imageButton" onClick={props.MoreAboutMe}>
           Click for More About Me
         </Button>
       </Card.Body>
-      {modalIsOpen && <AboutModal onCancel={closeModalHandler} />}
+      <div ref={(el) => (props.myRef.current.aboutMe = el)} />
+      {props.modalIsOpen && <AboutModal onCancel={props.closeModalHandler} />}
     </Card>
   );
 }

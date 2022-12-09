@@ -1,12 +1,12 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { Card, Container } from "react-bootstrap";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Card } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import CardHeader from "react-bootstrap/esm/CardHeader";
 
-const ContactUs = () => {
+const ContactUs = (props) => {
   const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -18,33 +18,47 @@ const ContactUs = () => {
         "zFlD2QMTXPcK2m3xX"
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        (response) => {
+          prompt("Email Sent");
         },
         (error) => {
-          console.log(error.text);
+          prompt("Error");
         }
       );
   };
 
   return (
-    <Card className="contactCard" style={{ marginTop: "8rem", border: "none" }}>
-      <h2 style={{ marginTop: "5rem", textAlign: "center" }}>Contact Me</h2>
-      <form
-        className="contactForm"
-        style={{ display: "flex" }}
-        ref={form}
-        onSubmit={sendEmail}
-      >
-        <label className="nameLabel">Name:</label>
-        <input className="nameInput" type="text" name="user_name" />
-        <label className="emailLabel">Email:</label>
-        <input className="emailInput" type="email" name="user_email" />
-        <label>Message:</label>
-        <textarea name="message" />
-        <input className="sendBtn" type="submit" value="Send" />
-      </form>
-    </Card>
+    <React.Fragment>
+      <Card className="contactContainer" style={{ border: "none" }}>
+        <Card.Title className="contactHeader text-center">
+          Contact Me
+        </Card.Title>
+        <Form className="formContainer" ref={form} onSubmit={sendEmail}>
+          <Form.Group className="mb-3" controlId="formBasicEmail">
+            <Form.Label className="mb-2 mt-3">Your Email</Form.Label>
+            <Form.Control
+              type="email"
+              placeholder="Enter email"
+              name="user_email"
+            />
+            <Form.Label className="mb-2 mt-3">Name</Form.Label>
+            <Form.Control
+              type="name"
+              placeholder="Enter name"
+              name="user_name"
+            />
+          </Form.Group>
+
+          <Form.Group className="mb-5" controlId="formBasicPassword">
+            <Form.Label>Message</Form.Label>
+            <Form.Control type="text" placeholder="Message" />
+          </Form.Group>
+          <Button variant="primary" type="submit" value="Send">
+            Submit
+          </Button>
+        </Form>
+      </Card>
+    </React.Fragment>
   );
 };
 
