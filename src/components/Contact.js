@@ -29,6 +29,10 @@ const ContactUs = (props) => {
 
   return (
     <React.Fragment>
+      <div
+        className="contactUs"
+        ref={(el) => (props.myRef.current.ContactUs = el)}
+      ></div>
       <Card className="contactContainer" style={{ border: "none" }}>
         <Card.Title className="contactHeader text-center">
           Contact Me

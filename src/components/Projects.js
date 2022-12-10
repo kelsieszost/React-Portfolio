@@ -1,6 +1,10 @@
 import React from "react";
 import { Carousel } from "react-carousel-minimal";
 import LevelUp from "../assets/LevelUp.png";
+import CodingQuiz from "../assets/CodingQuiz.png";
+import Klaw from "../assets/Klaw.png";
+import Weather from "../assets/Weather.png";
+import MyTeam from "../assets/MyTeam.png";
 
 function Gallery(props) {
   const data = [
@@ -9,23 +13,19 @@ function Gallery(props) {
       caption: "Level Up Fitness",
     },
     {
-      image:
-        "https://static2.tripoto.com/media/filter/tst/img/735873/TripDocument/1537686560_1537686557954.jpg",
+      image: CodingQuiz,
       caption: "Darjeeling",
     },
     {
-      image:
-        "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Palace_of_Fine_Arts_%2816794p%29.jpg/1200px-Palace_of_Fine_Arts_%2816794p%29.jpg",
+      image: Klaw,
       caption: "San Francisco",
     },
     {
-      image:
-        "https://i.natgeofe.com/n/f7732389-a045-402c-bf39-cb4eda39e786/scotland_travel_4x3.jpg",
+      image: Weather,
       caption: "Scotland",
     },
     {
-      image:
-        "https://www.tusktravel.com/blog/wp-content/uploads/2020/07/Best-Time-to-Visit-Darjeeling-for-Honeymoon.jpg",
+      image: MyTeam,
       caption: "Darjeeling",
     },
     {
@@ -77,7 +77,7 @@ function Gallery(props) {
             dots={true}
             pauseIconColor="white"
             pauseIconSize="40px"
-            slideBackgroundColor="black"
+            slideBackgroundColor="white"
             slideImageFit="contain"
             thumbnails={true}
             thumbnailWidth="100px"

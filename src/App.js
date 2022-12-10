@@ -31,7 +31,7 @@ function App() {
       />
       <SkillsCard />
       <Gallery myRef={myRef} />
-      <ContactUs myRef={myRef} />
+      <ContactUs myRef={myRef} scrollTo={scrollTo} />
       <Footer />
     </div>
   );

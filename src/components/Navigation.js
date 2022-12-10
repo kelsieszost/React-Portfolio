@@ -36,10 +36,16 @@ function Navigation(props) {
             >
               Projects
             </Nav.Link>
-            <Nav.Link className="px-4" href="#">
+            <Nav.Link className="px-4" href="KelsieSzost.pdf">
               Resume
             </Nav.Link>
-            <Nav.Link className="px-4" href="#">
+            <Nav.Link
+              className="px-4"
+              onClick={() => {
+                props.scrollTo("contactUs");
+              }}
+              href="#"
+            >
               Contact
             </Nav.Link>
           </Nav>
