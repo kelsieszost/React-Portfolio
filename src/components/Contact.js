@@ -31,7 +31,7 @@ const ContactUs = (props) => {
     <React.Fragment>
       <div
         className="contactUs"
-        ref={(el) => (props.myRef.current.ContactUs = el)}
+        ref={(el) => (props.myRef.current.contactUs = el)}
       ></div>
       <Card className="contactContainer" style={{ border: "none" }}>
         <Card.Title className="contactHeader text-center">

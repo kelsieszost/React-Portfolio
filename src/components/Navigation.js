@@ -1,22 +1,21 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import Row from "react-bootstrap/Row";
 import AboutMe from "./About";
+import NavDropdown from "react-bootstrap/NavDropdown";
+import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
 
 function Navigation(props) {
   function displayModal() {
     props.MoreAboutMe();
   }
   return (
-    <Navbar collapseOnSelect expand="sm">
-      <Container className="navStyles">
-        <Row>
-          <Navbar.Brand href="">KELSIE SZOST</Navbar.Brand>
-          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        </Row>
-        <Row>
-          <Nav>
+    <Navbar collapseOnSelect expand="lg">
+      <Container>
+        <Navbar.Brand href="#home">Kelsie Szost</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="nav-links">
             <Nav.Link
               className="px-4"
               onClick={() => {
@@ -49,7 +48,7 @@ function Navigation(props) {
               Contact
             </Nav.Link>
           </Nav>
-        </Row>
+        </Navbar.Collapse>
       </Container>
     </Navbar>
   );

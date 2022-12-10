@@ -1,13 +1,12 @@
-.navStyles {
+nav.navbar {
   padding-top: 4rem;
-  margin: 0;
 }
 
-nav.navbar.navbar
-
-span.navbar-brand {
-  font-size: xx-large;
+a.navbar-brand {
+  margin-right: 50%;
+  font-size: 2rem;
 }
+
 
 button.btn.btn-primary {
   background-color: black;
@@ -16,15 +15,6 @@ button.btn.btn-primary {
 div.modal-footer {
   align-items: center;
   justify-content: center;
-}
-
-.navbar {
-  max-width: 100%;
-}
-
-a.Nav-Link {
-  padding: 5rem;
-
 }
 
 .card {
@@ -84,7 +74,14 @@ div.contactHeader.text-center {
 div.contactCard.card-header {
   border: none;
 }
-.contactHeader {
+
+.projectLinks {
+  padding: 1.5rem;
+}
+
+.projectLinksContainer {
+  margin-top: 11rem;
+  text-align: center;
 }
 
 /* .contactCard {
