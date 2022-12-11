@@ -18,5 +18,5 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 ## Contact
 
-<a href="mailto:owner@kelsieszost.design"> Email</a>
+<a href="mailto:owner@kelsieszost.design"> Email</a><br>
 <a href="https://github.com/kelsieszost">Github</a>
