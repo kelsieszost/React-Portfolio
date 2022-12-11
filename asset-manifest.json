@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-Portfolio/static/css/main.bedfc8de.css",
-    "main.js": "/React-Portfolio/static/js/main.f4bcf219.js",
+    "main.css": "/React-Portfolio/static/css/main.acb3cecd.css",
+    "main.js": "/React-Portfolio/static/js/main.5fb9610d.js",
     "static/media/Klaw.png": "/React-Portfolio/static/media/Klaw.238f85e41cde41ffa8b7.png",
     "static/media/kelsieszost.jpg": "/React-Portfolio/static/media/kelsieszost.26a245954a0ef5b42d2d.jpg",
     "static/media/Weather.png": "/React-Portfolio/static/media/Weather.c0ca0f86d33504683cc0.png",
@@ -11,11 +11,11 @@
     "static/media/CodingQuiz.png": "/React-Portfolio/static/media/CodingQuiz.af4c8b084ef6fbd8888c.png",
     "static/media/JATE.png": "/React-Portfolio/static/media/JATE.d598cc2ec68e657ad202.png",
     "index.html": "/React-Portfolio/index.html",
-    "main.bedfc8de.css.map": "/React-Portfolio/static/css/main.bedfc8de.css.map",
-    "main.f4bcf219.js.map": "/React-Portfolio/static/js/main.f4bcf219.js.map"
+    "main.acb3cecd.css.map": "/React-Portfolio/static/css/main.acb3cecd.css.map",
+    "main.5fb9610d.js.map": "/React-Portfolio/static/js/main.5fb9610d.js.map"
   },
   "entrypoints": [
-    "static/css/main.bedfc8de.css",
-    "static/js/main.f4bcf219.js"
+    "static/css/main.acb3cecd.css",
+    "static/js/main.5fb9610d.js"
   ]
 }
