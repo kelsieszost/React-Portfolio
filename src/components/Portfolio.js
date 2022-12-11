@@ -2,13 +2,12 @@ import Skills from "./Skills";
 
 function SkillCard(props) {
   const cardStyle = {
-    width: "80rem",
     border: "none",
   };
   return (
     <div className="container">
       <div className="card" style={cardStyle}>
-        <div className="card-body">
+        <div className="skills card-body">
           <Skills />
         </div>
       </div>

@@ -57,7 +57,7 @@ const ContactUs = (props) => {
             <Form.Label>Message</Form.Label>
             <Form.Control type="text" placeholder="Message" />
           </Form.Group>
-          <Button variant="primary" type="submit" value="Send">
+          <Button className="submitBtn" type="submit" value="Send">
             Submit
           </Button>
         </Form>

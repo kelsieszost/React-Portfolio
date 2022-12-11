@@ -12,7 +12,7 @@ function Navigation(props) {
   return (
     <Navbar collapseOnSelect expand="lg">
       <Container>
-        <Navbar.Brand href="#home">Kelsie Szost</Navbar.Brand>
+        <Navbar.Brand href="#home">KELSIE SZOST</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="nav-links">

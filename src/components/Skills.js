@@ -5,17 +5,17 @@ const skillsData = [
   {
     name: "ReactJS",
     level: 90,
-    color: "#00d8ff",
+    color: "#F6C27D",
   },
   {
     name: "ExpressJS",
     level: 85,
-    color: "#6cc24a",
+    color: "#81CC7B ",
   },
   {
     name: "MySQL",
     level: 80,
-    color: "#00758f",
+    color: "#5B89F8 ",
   },
   {
     name: "GraphQL",
@@ -25,7 +25,7 @@ const skillsData = [
   {
     name: "Apollo",
     level: 72,
-    color: "RGBA(163,67,246,1)",
+    color: "#B480F8",
   },
   {
     name: "JavaScript",

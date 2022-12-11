@@ -1,15 +1,38 @@
 nav.navbar {
   padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+a.px-4 {
+  color: #706E51;
+}
+
+h2 {
+  color: #988374;
+  font-size: 6rem;
 }
 
 a.navbar-brand {
   margin-right: 50%;
   font-size: 2rem;
+  color: #988374;
 }
 
+.skills.card-body {
+  background-color: white;
+}
 
-button.btn.btn-primary {
-  background-color: black;
+.navbar-expand-lg {
+  background-color: #F4EBDF;
+}
+
+#closeBtn {
+  background-color: #A78B65;
+  border: none;
+}
+
+.projectLinksContainer {
+  background-color: ;
 }
 
 div.modal-footer {
@@ -18,12 +41,17 @@ div.modal-footer {
 }
 
 .card {
-  margin-top: 6rem;
+  margin-top: 0;
+}
+
+div.card-body {
+  background-color: #FCF9F4;
 }
 
 .card-title.h5 {
-  margin-top: 1rem;
+  margin-top: 4rem;
   font-size: xx-large;
+  color: #988374;
 }
 .card-text {
   margin-top: 1.5rem;
@@ -39,17 +67,21 @@ div.modal-footer {
 
 .imageButton.btn.btn-primary {
   margin-top: 4rem;
-  background-color: black;
+  background-color: #988374;
   color: white;
   margin-bottom: 1rem;
+  border: none;
 }
 
-.skillsCard {
-  display: flex;
+.imageButton.btn.btn-primary {
+  background-color: #988374;
+  border: none;
 }
+
 
 .skillsSection {
   display: flex;
+  justify-content: center;
   max-width: 50%;
 }
 
@@ -67,8 +99,9 @@ div.contactHeader.text-center {
   margin-top: 3rem;
   display: block;
   /* margin-top: 9rem; */
-  background-color: aliceblue;
+  background-color: #F4EBDF;
   padding: 2rem;
+  color:  #988374;
 }
 
 div.contactCard.card-header {
@@ -77,11 +110,33 @@ div.contactCard.card-header {
 
 .projectLinks {
   padding: 1.5rem;
+  color: #FCF9F4;
+}
+
+@media only screen and (max-width: 1080px) {
+  .projectLinks {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    align-items: center;
+    justify-content: center;
+    padding: .3rem
+    ;
+
+
+  }
 }
 
 .projectLinksContainer {
   margin-top: 11rem;
   text-align: center;
+ background-color: #988374;
+ padding-top: 2rem;
+ padding-bottom:  2rem;
+}
+
+button.submitBtn {
+  background-color: #988374;
 }
 
 /* .contactCard {

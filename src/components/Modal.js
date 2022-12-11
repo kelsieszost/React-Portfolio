@@ -24,7 +24,9 @@ function AboutModal(props) {
         </Modal.Body>
 
         <Modal.Footer>
-          <Button onClick={closeHandler}>Close</Button>
+          <Button id="closeBtn" onClick={closeHandler}>
+            Close
+          </Button>
         </Modal.Footer>
       </Modal.Dialog>
     </div>

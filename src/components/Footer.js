@@ -6,7 +6,7 @@ import { IconContext } from "react-icons";
 function Footer() {
   return (
     <React.Fragment>
-      <IconContext.Provider value={{ color: "#e114d0", size: "2em" }}>
+      <IconContext.Provider value={{ color: "#706E51", size: "2em" }}>
         <footer className="footer">
           <div>
             <a className="footerIcon" href="https://github.com/kelsieszost">
